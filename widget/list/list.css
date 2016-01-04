@@ -1,0 +1,10 @@
+
+.body-widget  ul{
+	width: 100%;
+}
+.body-widget li {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+}

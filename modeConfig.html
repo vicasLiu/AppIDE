@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<script src="jslib/jquery-1.9.js"></script>
+<script>
+    $(function(){
+        var str = '$(function(){'+
+            'var page = new KND.Page();'+
+            'page.config({'+
+            '    jsbase: "../public/",'+
+            '    cssbase: "../public/"'+
+            '});'+
+            'page.Ready(function(loginInfo){'+
+                'var op = {'+
+                '    Layout : {'+
+                '        show : true,'+
+                '        render: "body",'+
+                '        id : "layout1",'+
+                '        ele:['+
+                '            {"knd-header":{top: 0,height:50, show : true}},'+
+                '            {"listPage":{top: 51,height: $(window).height()-60-50, show : true}},'+
+                '            {"buttonlayer-Page":{top: 0, height: $(window).height(), show : true}},'+
+                '            {"mapPage":{top: 51,height: $(window).height(), show : true}}'+
+                '        ]'+
+                '    },'+
+                '    Toolbar: {'+
+                '        show: true,'+
+                '        id: "toolbar1",'+
+                '        render: "knd-header",'+
+                '        ele: ['+
+                '            {type: "title", text: "Process", show: true},'+
+                '            {type: "back", text: "返回", show: true},'+
+                '            {type: "more", text: "更多", show: true}'+
+                '        ],'+
+                '        events : {'+
+                '            evt : {'+
+                '                "click .back" : "pageBack",'+
+                '                "click .more" : "pageMore"'+
+                '            },'+
+                '            handle : {'+
+                '                "pageBack" : function() {'+
+                '                    exitConfirm();'+
+                '                },'+
+                '                "pageMore" : function(){'+
+                '                }'+
+                '            }'+
+                '        }'+
+                '    },'+
+                '    PushButton: {'+
+                '        show: true,'+
+                '        defualt: true,'+
+                '        id: "pushbutton1",'+
+                '        render: "buttonlayer-Page",'+
+                '        ele: ['+
+                '            {'+
+                '                "text": "照相", fn: function(){'+
+                '                capturePhoto();'+
+                '            }'+
+                '            },'+
+                '            {'+
+                '                "text": "录像", fn: function(){'+
+                '                capturePhoto();'+
+                '            }'+
+                '            }'+
+                '       ]'+
+                '               }'+
+    '           };'+
+    '        page.setOptions(op);'+
+        '    });'+
+        '});';
+        var pageModuleName = "test";
+        var index = 1;
+        $("#btn-addNewModule").click(function(){
+            var name = pageModuleName+index;
+            var url = "http://192.168.14.117:8080//platform/api/html/"+name;
+            $.ajax({
+                url : url,
+                success : function( msg ) {
+                    console.info(msg);
+                    $.ajax({
+                        url : "http://192.168.14.117:8080//platform/api/js/"+name,
+                        type : "POST",
+                        data : {
+                            content : str
+                        },
+                        success : function( jsMsg ) {
+                            console.info(jsMsg);
+                        }
+                    });
+                }
+            });
+            $('<div class="module" module-attr="'+name+'">'+name+'</div>').appendTo(".modulePlacer-div");
+            index++;
+        });
+        $("body").off("click",".module").on("click",".module",function(){
+            var pageName = $(this).attr("module-attr");
+            localStorage.setItem("moduleKey", pageName);
+            document.location.href = "ide.html";
+        });
+    });
+</script>
+<style>
+    .modeConfig-div{
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        background-color: #ccc;
+    }
+    .modulePlacer-div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 20%;
+    }
+    .module{
+        float: left;
+        width: 15%;
+        height: 20%;
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #00b7fc;
+    }
+</style>
+<body>
+    <div class="modeConfig-div">
+        <button id="btn-addNewModule">新建功能模块</button>
+    </div>
+    <div class="modulePlacer-div">
+    </div>
+</body>
+</html>

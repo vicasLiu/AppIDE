@@ -1,0 +1,13 @@
+{
+    "attr" : {
+        "id" : "string",
+        "subId" : "select",
+        "url" : "string",
+        "paging" : {
+            "page" : "string",
+            "count" : "string"
+        },
+        "dataParam" : "textarea",
+        "interface" : "string"
+    }
+}

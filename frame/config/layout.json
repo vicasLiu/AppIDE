@@ -1,0 +1,7 @@
+{
+    "header" : "<div id='ide-header' style='background-color:#969908;position: absolute; width: 100%;height: 20%;top: 0px; left: 0px;'><button id='ide-btnSave'>保存</button></div>",
+    "body" : "<div id='ide-body' style='background-color:#23990e;position: absolute; width: 60%;height: 60%;top: 20%; left: 20%;'></div>",
+    "left" : "<div id='ide-left' style='background-color:#1e4499;position: absolute; width: 20%;height: 60%;top: 20%; left: 0px;'><div id='ide-left-widget' style='position: relative;height: 60%;width: 100%;'></div><div id='ide-left-module' style='position: relative;height: 40%;width: 100%'></div></div>",
+    "right" : "<div id='ide-right' style='background-color:#649914;position: absolute; width: 20%;height: 60%;top: 20%; left: 80%;'></div>",
+    "footer" : "<div id='ide-footer' style='background-color:#997c0d;position: absolute; width: 100%;height: 50px;top: 80%; left: 0px;'></div>"
+}

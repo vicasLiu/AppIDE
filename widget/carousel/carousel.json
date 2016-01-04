@@ -1,0 +1,16 @@
+{
+    "attr" : {
+        "id" : "string",
+        "key" : "string",
+        "edit" : "string"
+    },
+    "css" : {
+        "width" : "int",
+        "height" : "int",
+        "top" : "int",
+        "left" : "int"
+    },
+    "events" : {
+
+    }
+}

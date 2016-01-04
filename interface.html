@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/interface.css"/>
+    <!--<link type="text/css" rel="stylesheet" href="widget/list/list.css"/>-->
+    <!--<link type="text/css" rel="stylesheet" href="widget/chart/chart.css"/>-->
+    <!--<link type="text/css" rel="stylesheet" href="widget/toolbar/toolbar.css"/>-->
+    <!--<link type="text/css" rel="stylesheet" href="widget/table/table.css"/>-->
+</head>
+<script src="jslib/jquery-1.9.js"></script>
+<script src="jslib/jquery.jqdrag.js"></script>
+<script src="jslib/interface.js"></script>
+<script src="frame/plugs/leftPlug.js"></script>
+<script src="frame/plugs/rightPlug.js"></script>
+<script src="frame/plugs/bodyPlug.js"></script>
+<script src="frame/plugs/plug.js"></script>
+<script src="frame/mode/mode.js"></script>
+<script src="frame/view/view.js"></script>
+<script src="frame/control/control.js"></script>
+<script src="frame/logic/resolve.js"></script>
+<script src="frame/logic/logic.js"></script>
+<script src="util/tool.js"></script>
+<script src="frame/IDE.js"></script>
+<script>
+    $(function(){
+        var pageName = localStorage.getItem("moduleKey");
+        var ide = new APPIDE.AppIDE();
+        ide.init();
+        ide.addPage('CostCollect');
+        // ide.import("frame/config/mode.json");
+    });
+</script>
+<body  onselectstart="return false">
+    <div id="appIde-layout">
+        <div id="appIde-header">
+            <div class="appIde-logo">AppIDE</div>
+            <ul class="appIde-nav">
+                <li><a href="javascript:void(0);"  class="selected" id="appIde-nav-btn-import">Import</a></li>
+                <li><a href="javascript:void(0);" id="appIde-nav-btn-preview">Preview</a></li>
+                <li><a href="javascript:void(0);" id="appIde-nav-btn-save">Save</a></li>
+            </ul>
+        </div>
+        <div id="appIde-sidebar-l">
+            <div id="appIde-sidebar-l-topPlugList">
+                <h2 class="appIde-title">插件列表</h2>
+                <ul class="appIde-sidebar-pluginList" id="ide-left-widget">
+                    <!--<li>List</li>-->
+                    <!--<li class="selected">Form</li>-->
+                    <!--<li>TogglePanel</li>-->
+                    <!--<li>Panel</li>-->
+                    <!--<li>Menu</li>-->
+                    <!--<li>Tips</li>-->
+                </ul>
+            </div>
+            <div id="appIde-sidebar-l-tap">...</div>
+            <div id="appIde-sidebar-l-bottomPageModule">
+                <h2 class="appIde-title"><span>+</span>页面列表</h2>
+                <ul class="appIde-sidebar-l-bottomPageModule-pageList" id="ide-left-module">
+                </ul>
+            </div>
+            <div class="appIde-sidebar-collapse">《</div>
+        </div>
+        <div id="appIde-main">
+            <div id="ide-body" class="appIde-main-showArea">
+                <div id="ide-body-top"></div>
+                <div id="ide-body-content"></div>
+                <div id="ide-body-bottom"></div>
+            </div>
+            <div class="appIde-main-dataArea" id="ide-main-dataArea"></div>
+        </div>
+        <div id="appIde-sidebar-r">
+            <ul  id="appIde-sidebar-r-attrAreaTab">
+                <li class="selected" data-tab="sect1">属性</li>
+                <li data-tab="sect2">样式</li>
+                <li data-tab="sect3">事件</li>
+                <p style="float: right;width: 20px;"><span class="selected">+</span><span>+</span><span>+</span></p>
+            </ul>
+            <div id="appIde-sidebar-r-mainPanel">
+                <div class="appIde-panel selected" id="appIde-sidebar-r-attrAreaList-attr" data-tab="sect1">
+                    <form class="widget-attr-config">
+                        <!--<p><label>Label</label><input type="text"/></p>-->
+                        <!--<p><label>Label</label><input type="text"/></p>-->
+                        <!--<p><label>Label</label><input type="text"/></p>-->
+                        <!--<p><label>Label</label><input type="text"/></p>-->
+                        <!--<p><label>Label</label><input type="text"/></p>-->
+                        <!--<p><label>Label</label><input type="text"/></p>-->
+                    </form>
+                </div>
+                <div class="appIde-panel" id="appIde-sidebar-r-attrAreaList-style" data-tab="sect2">
+                    <form class="widget-style-config">
+                        <!--<p><label>Width</label><input type="text"/></p>-->
+                        <!--<p><label>Height</label><input type="text"/></p>-->
+                    </form>
+                </div>
+                <div class="appIde-panel" id="appIde-sidebar-r-attrAreaList-event" data-tab="sect3">
+                    <form>
+                        <p><label>ClickEvent</label><input type="text"/></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

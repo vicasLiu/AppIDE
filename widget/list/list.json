@@ -1,0 +1,18 @@
+{
+    "attr" : {
+        "id" : "string",
+        "title" : "string",
+        "name" : "string",
+        "subId" : "string",
+        "divPosition" : "string"
+    },
+    "css" : {
+        "width" : "int",
+        "height" : "int",
+        "color" : "string"
+    },
+    "events" : {
+
+    },
+    "layout" : "<ul style='position: absolute;width: 20%;height: 20%;'><li>A</li><li>B</li></ul>"
+}

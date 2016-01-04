@@ -1,0 +1,32 @@
+.appIde-table {
+	width: 100%;
+}
+.appIde-table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.appIde-table table tr {
+	width: 100%;
+}
+.appIde-table th {
+	height: 30px;
+	line-height: 30px;
+	font-weight: bolder;
+}
+.appIde-table table {
+	border: 0;
+}
+ .appIde-table td, .appIde-table table th {
+	border-collapse: collapse;
+	border: 1px solid #fff;
+
+}
+.appIde-table table th {
+	background: rgb(231, 241, 254);
+	color: #333;
+}
+.appIde-table td {
+	height: 25px;
+	padding: 1px 2px;
+	text-align: center;
+}

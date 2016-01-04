@@ -1,0 +1,15 @@
+{
+    "attr" : {
+        "id" : "string",
+        "title" : "select"
+    },
+    "css" : {
+        "width" : "int",
+        "height" : "int",
+        "color" : "string"
+    },
+    "events" : {
+
+    },
+    "layout" : "<ul style='position: absolute;width: 20%;height: 20%;'><li>A</li><li>B</li></ul>"
+}

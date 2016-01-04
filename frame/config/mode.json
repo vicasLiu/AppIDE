@@ -1,0 +1,94 @@
+{
+    "PageA" : {
+        "ModuleA" : {
+            "Layout" : [{
+                "id" : "List-list-1",
+                "css" : {
+                    "width" : "100%",
+                    "height" : "50px",
+                    "position" : "absolute",
+                    "left" : "0px",
+                    "top" : "0px"
+                }
+            },{
+                "id" : "List-list-2",
+                "css" : {
+                    "width" : "100%",
+                    "height" : "50px",
+                    "position" : "absolute",
+                    "left" : "0px",
+                    "top" : "51px"
+                }
+            },{
+                "id" : "Form-form-1",
+                "css" : {
+                    "width" : "100%",
+                    "height" : "200px",
+                    "position" : "absolute",
+                    "left" : "0px",
+                    "top" : "110px"
+                }
+            }],
+            "List" : [
+                {
+                    "id" : "list-1",
+                    "title" : "DemoTitle1",
+                    "name" : "DemoName1",
+                    "css" : {
+                        "width" : "200px",
+                        "height" : "200px"
+                    }
+                },
+                {
+                    "id" : "list-2",
+                    "title" : "DemoTitle2",
+                    "name" : "DemoName2"
+                }
+            ]
+        }
+    },
+    "PageB" : {
+        "ModuleA" : {
+            "Layout" : [{
+                "id" : "List-list-1",
+                "css" : {
+                    "width" : "100%",
+                    "height" : "50px",
+                    "position" : "absolute",
+                    "left" : "0px",
+                    "top" : "0px"
+                }
+            },{
+                "id" : "List-list-2",
+                "css" : {
+                    "width" : "100%",
+                    "height" : "50px",
+                    "position" : "absolute",
+                    "left" : "0px",
+                    "top" : "51px"
+                }
+            },{
+                "id" : "Form-form-1",
+                "css" : {
+                    "width" : "100%",
+                    "height" : "200px",
+                    "position" : "absolute",
+                    "left" : "0px",
+                    "top" : "110px"
+                }
+            }],
+            "List" : [
+                {
+                    "id" : "list-1",
+                    "title" : "DemoTitle1",
+                    "name" : "DemoName1"
+                },
+                {
+                    "id" : "list-2",
+                    "title" : "DemoTitle2",
+                    "name" : "DemoName2"
+                }
+            ]
+        }
+    }
+}

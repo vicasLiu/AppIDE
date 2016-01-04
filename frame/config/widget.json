@@ -1,0 +1,54 @@
+{
+    "DataComponent" : {
+        "text" : "Data",
+        "img" : ""
+    },
+    "List" : {
+        "text" : "List",
+        "img" : ""
+    },
+    "Form" : {
+        "text" : "Form",
+        "img" : ""
+    },
+    "Chart" : {
+        "text" : "Chart",
+        "img" : ""
+    },
+    "Toolbar" : {
+        "text" : "Toolbar",
+        "img" : ""
+    },
+    "Table" : {
+        "text" : "Table",
+        "img" : ""
+    },
+    "Menu" : {
+        "text" : "Menu",
+        "img" : ""
+    },
+    "Search" : {
+        "text" : "Search",
+        "img" : ""
+    },
+    "Tips" : {
+        "text" : "Tips",
+        "img" : ""
+    },
+    "Timeline" : {
+        "text" : "Timeline",
+        "img" : ""
+    },
+    "Button" : {
+        "text" : "Button",
+        "img" : ""
+    },
+    "Switch" : {
+        "text" : "Switch",
+        "img" : ""
+    },
+    "Carousel" : {
+        "text" : "Carousel",
+        "img" : ""
+    }
+}

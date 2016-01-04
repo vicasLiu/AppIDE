@@ -1,0 +1,20 @@
+{
+    "attr" : {
+        "id" : "string",
+        "head" : "textarea",
+        "body" : "textarea",
+        "footer" : "textarea",
+        "adapter" : "function"
+    },
+    "css" : {
+        "cls" : "string",
+        "width" : "int",
+        "height" : "int",
+        "top" : "int",
+        "left" : "int",
+        "color" : "string"
+    },
+    "events" : {
+
+    }
+} 

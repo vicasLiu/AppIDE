@@ -1,0 +1,31 @@
+.body-widget {
+	width: 100%;
+	color: #333;
+	background: #fff;
+}
+.appIde-toolbar {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: rgb(48, 120, 209);
+	overflow: hidden;
+	color: #fff;
+}
+.appIde-toolbar-span-l {
+	width: 19%;
+	float: left;
+	padding-left: 1%;
+}
+.appIde-toolbar-span-r {
+	width: 19%;
+	float: right;
+	text-align: right; 
+	padding-right: 1%;
+}
+.appIde-toolbar-span-title {
+	width: 60%;
+	float: left;
+	text-align: center; 
+	font-size: 15px;
+	font-weight: bolder;
+}

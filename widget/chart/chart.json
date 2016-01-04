@@ -1,0 +1,41 @@
+{
+    "attr" : {
+        "id" : "string",
+        "type" : "select",
+        "adpter" : "string",
+        "xaxis" : {
+            "filed" : "array",
+            "format" : "select"
+        },
+        "yaxis" : {
+            "left" : "array",
+            "right" : "array"
+        },
+        "Legend" : {
+            "show" : "boolean"
+        },
+        "ToolTips" : {
+            "show" : "boolean"
+        },
+        "CrossHair" : {
+            "show" : "boolean"
+        },
+        "TrackingBall" : {
+            "show" : "boolean"
+        }
+    },
+    "css" : {
+        "cls" : "string",
+        "width" : "int",
+        "height" : "int",
+        "top" : "int",
+        "left" : "int",
+        "color" : "string"
+    },
+    "events" : {
+
+    },
+    "data" : {
+        "type" : ["line","bar","pie","OHLC","stacked","annulus","column","dashboard","radar"]
+    }
+}
